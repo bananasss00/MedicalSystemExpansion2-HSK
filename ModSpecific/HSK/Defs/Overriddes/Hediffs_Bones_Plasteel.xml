@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- SK Name=BodyPartBase_BionicRibBase -->
+	<ThingDef Name="BodyPartBionic_Bone" ParentName="SK_BodyPartBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<thingCategories>
+			<li>SyntheticOrgans</li>
+			<!-- <li>BonePartsPlasteel</li> -->
+		</thingCategories>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<tradeTags>
+			<li>TechHediff</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkillLearnPerTick>0.8</workSkillLearnPerTick>
+			<workSkill>Crafting</workSkill>
+			<workAmount>3550</workAmount>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>EPOEAssembling</soundWorking>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>Bionics</researchPrerequisite>			<!-- Original research: BoneProstheticsPlasteel -->
+			<recipeUsers>
+				<li>TableSynthetics</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

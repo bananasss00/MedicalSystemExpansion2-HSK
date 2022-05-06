@@ -58,9 +58,13 @@
 
 		<!-- royalty -->
 		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific/Royalty</li>
-
+		
+		<!-- HSK -->
+		<li IfModActive="skyarkhangel.HSK">ModSpecific/HSK</li>
+		
 		<!-- base -->
 		<li>Common</li>
 		<li>1.3</li>
+		
 	</v1.3>
 </loadFolders>

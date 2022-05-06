@@ -8,8 +8,17 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath> /Defs/ThingDef[@ParentName="CombatAdvancedBionicsBase"] [defName="ANN_PowerArms"]</xpath>
 	</Operation>
+	<!-- <Operation Class="PatchOperationRemove"> -->
+		<!-- <xpath> /Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"] [defName="ANN_InstallPowerArms"]</xpath> -->
+	<!-- </Operation> -->
+	
+	<!-- HSK Fixes -->
 	<Operation Class="PatchOperationRemove">
-		<xpath> /Defs/RecipeDef[@ParentName="SurgeryInstallBodyPartArtificialBase"] [defName="ANN_InstallPowerArms"]</xpath>
+		<xpath> /Defs/RecipeDef[@ParentName="SK_SurgeryInstallBodyPartArtificialBase"] [defName="ANN_InstallPowerArms"]</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/ThingDef[@Name="BaseHumanlikePawn" and @ParentName="SK_BasePawn"]/recipes/li[text()="ANN_InstallPowerArms"]</xpath>
 	</Operation>
 
 </Patch>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- SK Name=BodyPartBase_GlitterworldImplant -->
+	<ThingDef Name="MSE_ModuleBionic" ParentName="BodyPartBase_Bionic" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<thingCategories Inherit="False"> <!-- TODO -->
+			<li>MSE2Modules</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Item/Health/HealthItemBionic3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>17</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	<!-- <ThingDef Name="MSE_ModuleBionic_Combat_HSK" ParentName="MSE_ModuleBionic" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>BionicModules</researchPrerequisite> <!-d- TODO: Fix research -d->
+		</recipeMaker>
+		<techHediffsTags>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</ThingDef> -->
+
+</Defs>

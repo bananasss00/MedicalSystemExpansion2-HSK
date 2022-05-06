@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- SK Name=BodyPartBase_Simple -->
+	<ThingDef Name="BodyPartProsthetic_Bone" ParentName="SK_BodyPartBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<thingCategories>
+			<li>SimpleProstheses</li>
+		</thingCategories>
+		<tradeTags>
+			<li>TechHediff</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkillLearnPerTick>0.8</workSkillLearnPerTick>
+			<workSkill>Crafting</workSkill>
+			<workAmount>3000</workAmount>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>EPOEAssembling</soundWorking>
+			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableBasicProsthetic</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>
